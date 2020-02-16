@@ -1,3 +1,42 @@
 body {
   color: red;
 }
+
+.grid-div {
+  color: black;
+  display: grid;
+  padding: 1rem;
+  max-width: 100rem;
+  margin: auto;
+  grid-gap: 1rem;
+  grid-template-columns: auto auto auto;
+}
+
+.number-button {
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.number-button:hover {
+  color: white;
+  background-color: cornflowerblue;
+}
+
+.number-button.multiple {
+  color: white;
+  background-color: green;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  .grid-div {
+    grid-template-columns: auto;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .grid-div {
+    grid-template-columns: auto auto;
+  }
+}
